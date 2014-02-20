@@ -94,7 +94,7 @@ for ($i=0; $i<count($data); $i++) {
 	<div id="info">
 		<p>
 			<strong>News Visualizer</strong>. PHP + HTML5 + CSS3 + jQuery Demo. 
-			<br />Data Source: BBC News API: <a href="http://api.bbcnews.appengine.co.uk/" target="_blank">api.bbcnews.appengine.co.uk/</a>
+			<br />Data Source: BBC News RSS: <a href="http://feeds.bbci.co.uk/news/rss.xml" target="_blank">feeds.bbci.co.uk/news/rss.xml</a>
 			<br />Made by: Jorge Moreno aka <a href="http://moro.es" title="Moro. Front End Web Developer and UI Designer" target="_blank">Moro</a> ( <a href="https://twitter.com/alterebro" title="Twitter Feed" target="_blank">@alterebro</a> )
 			<br />&mdash; <a href="https://github.com/alterebro/NewsVisualizer" title="BBC News Visualizer Source Code" target="_blank">Source Code available on GitHub</a>
 		</p>
