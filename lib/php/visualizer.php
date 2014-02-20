@@ -85,7 +85,8 @@ if ($_GET && !empty($_GET['topic'])) {
 	}
 }
 
-$json = getJson('http://api.bbcnews.appengine.co.uk/stories/'.$current_topic);
+// $json = getJson('http://api.bbcnews.appengine.co.uk/stories/'.$current_topic);
+$json = getJson('http://news.moro.es/api/api.php?id='.$current_topic);
 $json = json_decode($json, true);
 $json = $json['stories'];
 
