@@ -1,8 +1,8 @@
-<?php 
-
+<?php
 
 function getFile($url) {
 
+	/*
 	$json_url = $url;
 	$ch = curl_init( $json_url );
 	$options = array(
@@ -10,7 +10,22 @@ function getFile($url) {
 		CURLOPT_HTTPHEADER => array('Content-type: application/json') ,
 	);
 	curl_setopt_array( $ch, $options );
-	$result =  curl_exec($ch); // Getting JSON result string
+	$result = curl_exec($ch); // Getting JSON result string
+	*/
+
+	$curl = curl_init();
+	curl_setopt_array( $curl, array(
+		CURLOPT_HTTPHEADER => array('Content-Type: application/json'),
+		CURLOPT_RETURNTRANSFER => true,
+		CURLOPT_CONNECTTIMEOUT => 0,
+		CURLOPT_FOLLOWLOCATION => false,
+		CURLOPT_SSL_VERIFYPEER => FALSE,
+		CURLOPT_SSL_VERIFYHOST => 2,
+		CURLOPT_USERAGENT => 'curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5',
+		CURLOPT_URL => $url ) );
+
+	$result = curl_exec( $curl );
+	curl_close( $curl );
 
 	return $result;
 }
@@ -74,7 +89,7 @@ $topics = array(
 $current_topic = $topics[0]['id'];
 $current_topic_index = 0;
 if ($_GET && !empty($_GET['topic'])) {
-	$out = $_GET['topic'];	
+	$out = $_GET['topic'];
 	$out_counter = 0;
 	foreach ($topics as $topic) {
 		if ($topic['id'] == $_GET['topic']) {
@@ -86,14 +101,14 @@ if ($_GET && !empty($_GET['topic'])) {
 }
 
 // $json = getJson('http://api.bbcnews.appengine.co.uk/stories/'.$current_topic);
-$json = getJson('http://news.moro.es/api/api.php?id='.$current_topic);
+$json = getJson('https://news.moro.es/api/api.php?id='.$current_topic);
 $json = json_decode($json, true);
 $json = $json['stories'];
 
 $limit = rand(8, count($json));
 
 $data = array();
-for ($i=0; $i < $limit; $i++) { 
+for ($i=0; $i < $limit; $i++) {
 	$data[] = array(
 		'text' => $json[$i]['description'],
 		'link' => $json[$i]['link'],
