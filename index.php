@@ -98,6 +98,9 @@ for ($i=0; $i<count($data); $i++) {
 			<br />Made by: Jorge Moreno aka <a href="https://moro.es" title="Moro. Front End Web Developer and UI Designer" target="_blank">Moro</a> ( <a href="https://twitter.com/alterebro" title="Twitter Feed" target="_blank">@alterebro</a> )
 			<br />&mdash; <a href="https://github.com/alterebro/NewsVisualizer" title="BBC News Visualizer Source Code" target="_blank">Source Code available on GitHub</a>
 		</p>
+		<p>
+			<strong>In the memory of <a href="https://twitter.com/thenataliesun" title="Natalie Sun" target="_blank">Natalie Sun</a></strong>.
+		</p>
 	</div>
 
 	<div class="main-container">

@@ -24,7 +24,7 @@ a, section, article {
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;  
+	transition: all 0.3s ease-out;
 }
 a:hover {
 	color: #fff;
@@ -58,10 +58,10 @@ hr {
 	text-shadow: 0 -1px 0 #000;
 	white-space: nowrap;
 }
-.header-container header h1, 
-.header-container header nav, 
-.header-container header nav ul, 
-.header-container header nav ul li, 
+.header-container header h1,
+.header-container header nav,
+.header-container header nav ul,
+.header-container header nav ul li,
 .header-container header nav ul li a {
 	display: block;
 	float: left;
@@ -96,7 +96,7 @@ hr {
 }
 .header-container ul#about li a {
 	display: block;
-	float: left;	
+	float: left;
 	position: relative;
 	padding: 0 0 0 25px;
 	line-height: 20px;
@@ -151,12 +151,15 @@ div#info:after {
 	border-bottom-color: #fff;
 }
 div#info a {
-	color: #999;
+	color: #555;
 	border-bottom: dotted #ccc 1px;
 	font-weight: 700;
 }
 div#info a:hover {
 	color: #000;
+}
+div#info p:first-child {
+	margin: 0 0 10px;
 }
 
 
@@ -169,7 +172,7 @@ div#info a:hover {
 	display: block;
 	float: left;
 	width: 100%;
-	height: 100%;   
+	height: 100%;
 	overflow: hidden;
 }
 .main {
@@ -180,7 +183,7 @@ div#info a:hover {
 .main, article, section {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 
@@ -366,7 +369,7 @@ div#info a:hover {
 	#twitter .box .share:hover { background: #007CBD url('../images/twitter-16.png') no-repeat 6px 2px; }
 	#facebook .box .share:hover { background: #0B2968 url('../images/facebook-16.png') no-repeat 6px 2px; }
 	#googleplus .box .share:hover { background: #A11806 url('../images/googleplus-16.png') no-repeat 8px 2px; }
-	#stumbleupon .box .share:hover { background: #BB1900 url('../images/stumbleupon-16.png') no-repeat 6px 2px; }	
+	#stumbleupon .box .share:hover { background: #BB1900 url('../images/stumbleupon-16.png') no-repeat 6px 2px; }
 
 }
 
@@ -393,7 +396,7 @@ div#info a:hover {
 		height: 20px;
 		width: 20px;
 		line-height: 20px;
-		text-indent: -1000em;	
+		text-indent: -1000em;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
@@ -406,7 +409,7 @@ div#info a:hover {
 	#twitter .box .share:hover { background: #007CBD url('../images/twitter-16.png') no-repeat 2px 2px; }
 	#facebook .box .share:hover { background: #0B2968 url('../images/facebook-16.png') no-repeat 2px 2px; }
 	#googleplus .box .share:hover { background: #A11806 url('../images/googleplus-16.png') no-repeat 2px 2px; }
-	#stumbleupon .box .share:hover { background: #BB1900 url('../images/stumbleupon-16.png') no-repeat 2px 2px; }	
+	#stumbleupon .box .share:hover { background: #BB1900 url('../images/stumbleupon-16.png') no-repeat 2px 2px; }
 
 }
 
