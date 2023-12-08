@@ -24,7 +24,7 @@ function getRemoteData($path) {
 }
 
 $url_bit = ($req_id == 'headlines') ? '' : '/'.$req_id;
-$feed_url = 'http://feeds.bbci.co.uk/news'.$url_bit.'/rss.xml';
+$feed_url = 'https://feeds.bbci.co.uk/news'.$url_bit.'/rss.xml';
 $feed = simplexml_load_string(getRemoteData($feed_url));
 
 
